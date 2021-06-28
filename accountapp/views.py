@@ -3,4 +3,8 @@ from django.shortcuts import render
 
 
 def hello_world(requset):
-    return render(requset, 'accountapp/hello.html')
+
+    if requset.method == "POST":
+        return render(requset, 'accountapp/hello.html', context={'text': 'POST METHOD!!!'})
+    else:
+        return render(requset, 'accountapp/hello.html', context={'text': 'GET METHOD!!!'})
