@@ -3,4 +3,4 @@ from django.shortcuts import render
 
 
 def hello_world(requset):
-    return render(requset, 'base.html')
+    return render(requset, 'accountapp/hello.html')
