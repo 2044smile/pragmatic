@@ -6,7 +6,7 @@ RUN git clone https://github.com/2044smile/pragmatic.git
 
 WORKDIR /home/pragmatic/
 
-RUN sudo pip install --upgrade pip
+RUN pip install --upgrade pip
 
 RUN pip install -r requirements.txt
 
