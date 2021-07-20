@@ -6,11 +6,7 @@ RUN git clone https://github.com/2044smile/pragmatic.git
 
 WORKDIR /home/pragmatic/
 
-RUN pip3 install --upgrade --user pip
-
-RUN /usr/local/bin/python -m pip install --upgrade pip
-
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt
 
 RUN echo "SECRET_KEY=django-insecure-q_@ob%76shhhe5h-$2n@(!g(=i&smef5y4_t=2c_f2im5vgi*(" > .env
 
